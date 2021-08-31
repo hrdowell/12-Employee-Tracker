@@ -204,7 +204,7 @@ function addRolePrompt() {
     }); 
 }
 
-// Grabs all employees, asks user which one they want to update, asks what role the employee should have, then calls ORM function to update the database
+// Takes all employees, asks which option they want to update, asks what role the employee should have, then calls ORM function to update the database
 function updateRolePrompt() {
     orm.getEmployees()
     .then(function(res) {
